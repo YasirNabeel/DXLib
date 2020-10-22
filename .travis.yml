@@ -1,6 +1,6 @@
 language: objective-c
 
-osx_image: xcode10.1
+osx_image: Xcode 12.2
 env:
   matrix:
     - TEST_SDK=iphonesimulator14.2 OS=14.2 NAME='iPhone XR'
