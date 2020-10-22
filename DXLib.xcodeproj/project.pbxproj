@@ -18,6 +18,7 @@
 		9D8FE401254197E3000F1F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8FE3FF254197E3000F1F15 /* LaunchScreen.storyboard */; };
 		9D8FE40C254197E3000F1F15 /* DXLibExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FE40B254197E3000F1F15 /* DXLibExamplesTests.swift */; };
 		9D8FE417254197E3000F1F15 /* DXLibExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FE416254197E3000F1F15 /* DXLibExamplesUITests.swift */; };
+		9D8FE42825419C43000F1F15 /* DXLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FE42725419C43000F1F15 /* DXLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9D8FE412254197E3000F1F15 /* DXLibExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXLibExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8FE416254197E3000F1F15 /* DXLibExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXLibExamplesUITests.swift; sourceTree = "<group>"; };
 		9D8FE418254197E3000F1F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8FE42725419C43000F1F15 /* DXLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				9D8FE3D5254196CD000F1F15 /* DXLib.h */,
 				9D8FE3D6254196CD000F1F15 /* Info.plist */,
+				9D8FE42725419C43000F1F15 /* DXLib.swift */,
 			);
 			path = DXLib;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				TargetAttributes = {
 					9D8FE3D1254196CD000F1F15 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					9D8FE3DA254196CD000F1F15 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -380,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8FE42825419C43000F1F15 /* DXLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +587,7 @@
 		9D8FE3E7254196CD000F1F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4PJ6RC72B6;
@@ -598,6 +604,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dx.DXLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -606,6 +613,7 @@
 		9D8FE3E8254196CD000F1F15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4PJ6RC72B6;
@@ -630,6 +638,7 @@
 		9D8FE3EA254196CD000F1F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4PJ6RC72B6;
 				INFOPLIST_FILE = DXLibTests/Info.plist;
@@ -648,6 +657,7 @@
 		9D8FE3EB254196CD000F1F15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4PJ6RC72B6;
 				INFOPLIST_FILE = DXLibTests/Info.plist;
