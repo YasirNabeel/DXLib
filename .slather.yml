@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: DXLib.xcodeproj
+scheme: DXLib
+output_directory: reports
+ignore:
+  - DXLibTests/*
